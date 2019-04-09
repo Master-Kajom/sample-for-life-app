@@ -1,0 +1,99 @@
+<div data-options="dxView : { name: 'contact_us', title: 'CONTACT US', disableCache: true } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div data-bind="dxToolbar: { dataSource: toolbarItems }"></div>
+
+        <div data-bind="dxLoadPanel:{
+            message: 'Sending...',
+            visible: loadPanelVisible
+        }"></div>
+
+        <div data-bind="dxScrollView: { height: function() { return $(window).height() * 0.9 } }">
+
+            <div class="card">
+                <h3 class="card-header primary-color white-text">Send Us a Message using this form</h3>
+                <div class="card-body">
+                    <div style="padding: 10px">
+                        <span>E-Mail</span>
+                        <div data-bind="dxTextBox: { placeholder: 'Email', mode:'email', value: email }, dxValidator: emailValidationRules"></div>
+                        <span>Message</span>
+                        <div data-bind="dxTextArea: { placeholder: 'Content', value: msg }, dxValidator: msgValidationRules"></div>
+                    </div>
+                    <div class="centre">
+                        <div data-bind="dxButton: { text: 'SEND MESSAGE', icon:'message', onClick: SendMail, useSubmitBehavior: true, type: 'success' }"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width:100%;">
+                <div class="card">
+                    <h3 class="card-header primary-color white-text">Customer Care</h3>
+                    <div class="card-body">
+                        <!--<h4 class="card-title">No.47, Kwame Nkrumah Avenue</h4>-->
+                        <p class="card-text">
+                            Telephone Head Office
+                            +233 0302 246 142 / +233 0202 222 113
+                            +233 0302 246 113-4
+                        </p>
+                        <p class="card-text">
+                            Email
+                            info@glicolife.com
+                            Customerservices@glicogroup.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width:100%;">
+                <div class="card">
+                    <h3 class="card-header primary-color white-text">Find your closest Branch by choosing your Region </h3>
+                    <div class="card-body">
+                        <table style="width:96%">
+                            <tr>
+                                <td style="width:25%">Airport office</td>
+                                <td style="width:75%">No. 3 Aviation Road, close Ghana Home Loans Building, Airport</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Bolgatanga office</td>
+                                <td style="width:75%">SSNIT Building, Bolga-Navrongo Road P.O.Box 618, Bolgatanga</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Burma Camp</td>
+                                <td style="width:75%">Old Commercial Bank Building Opposite the Post office Burma Camp, Accra</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Cape Coast</td>
+                                <td style="width:75%">Opposite Accra Station, Tantri P.O.Box CC87, Cape Coast</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Ho office</td>
+                                <td style="width:75%">Adjacent to City Lights P.O.Box 460, HO</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Koforidua office</td>
+                                <td style="width:75%">Antartic Plaza P.O.Box 713, Koforidua</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Kumasi office</td>
+                                <td style="width:75%">Adum, opposite abura printing press, P.O.Box 3517, kumasi</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Obuasi office </td>
+                                <td style="width:75%">Former Olam Building P.O.Box 1057, Obuasi</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Oda</td>
+                                <td style="width:75%">Adjacent Oda Gov’t Hospital P.O.Box 960, Oda</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%">Sunyani office</td>
+                                <td style="width:75%">Opposite Cocoa House P.O.Box 1607, Sunyani</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

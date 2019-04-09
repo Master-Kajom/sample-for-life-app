@@ -1,0 +1,125 @@
+<div data-options="dxView : { name: 'faq', title: 'Frequently asked Questions', disableCache: true } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+
+        <div data-bind="dxScrollView: { height: function() { return $(window).height() * 0.9 } }">
+            <!--<div align="center" style="width:100%;"><img src='images/logo_glico.png' /></div>-->
+            <!--<div style="width:100%">
+                <p align="center"><strong>APPLICATION FOR LIFE INSURANCE AND / ANNUITY PLAN MADE TO<br />GLICO LIFE INSURANCE COMPANY LIMITED<br />P.O. BOX 4251, ACCRA</strong></p>
+            </div>-->
+            <!---------------new design---------->
+            <div style="width:100%;margin:0 auto;">
+                <div class="uk-card uk-card-default uk-width-1-2@m" style="width:96%;margin:0 auto;">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                            <h3 class="uk-card-title uk-margin-remove-bottom"><strong>FAQs for Life Insurance</strong></h3>
+                            <!--<p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>-->
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>How do I file a death claim?</strong>
+                            </h3>
+                            <p>
+                                There are two ways you can now file a death claim on a GLICO LIFE policy or account.
+                            </p>
+                        </div>
+
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>How do I get information about my policy values?</strong>
+                            </h3>
+                            <p>
+                                You can view your policy values online by logging in to our online account access service that is on the web portal or the GLICO LIFE Mobile app.
+                            </p>
+                        </div>
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>How do I take a loan out against my GLICO LIFE policy?</strong>
+                            </h3>
+                            <p>
+                                To request a loan or withdrawal from your GLICO LIFE policy, or to perform a cash surrender of your policy, contact our Customer Service Center at +233 0302 246 142 / +233 0202 222 113, Mon.-Fri., 8 a.m.-5 p.m. ET. Please have your policy numbers available when you call.
+                            </p>
+                        </div>
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>How do I change my personal information (i.e., address, phone number, email)?</strong>
+                            </h3>
+                            <p>
+                                Log in to your Account Access on the GLICO LIFE mobile app. If you do not have Account Access, register on the GLICO LIFE mobile app.
+                            </p>
+                        </div>
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>How do I change my Beneficiary?</strong>
+                            </h3>
+                            <p>
+                                Call our Customer Service Center at 1-800-778-2255
+                            </p>
+                        </div>
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>Where can I find an agent after moving to another state?</strong>
+                            </h3>
+                            <p>
+                                Call our Customer Service Center at 1-800-778-2255
+                            </p>
+                        </div>
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>What do I do if I've lost my policy?</strong>
+                            </h3>
+                            <p>
+                                Call our Customer Service Center at 1-800-778-2255
+                            </p>
+                        </div>
+
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>Can I service my policy online?</strong>
+                            </h3>
+                            <p>
+                                Through our Account Access online service, that is, the web portal or the GLICO LIFE mobile app. Your can view Policy information, premium statements, buy a new policy and pay premiums via mobile money.
+                            </p>
+                        </div>
+
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>Can I make an online payment to my life insuarance policy?</strong>
+                            </h3>
+                            <p>
+                                Through our Account Access online service.
+                            </p>
+                        </div>
+
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>Can I schedule a premium payment for a future date?</strong>
+                            </h3>
+                            <p>
+                                Through our Account Access online service.
+                            </p>
+                        </div>
+
+                        <div style="font-size: medium;">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">
+                                <strong>How can I reinstate a lapsed policy?</strong>
+                            </h3>
+                            <p>
+                                We suggest you log in to the GLICO LIFE mobile app to make a payment and or call the GLICO LIFE Customer Service Center Mon.-Fri., 8 a.m.- 5 p.m. ET at +233 0302 246 142 / +233 0202 222 113.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!--<div class="uk-card-footer">
+                        <a href="#" class="uk-button uk-button-text">Read more</a>
+                    </div>-->
+                </div>
+            </div>
+            <!---------------end of new design----------->
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<div data-options="dxView : { name: 'home', title: '', disableCache: true } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+
+        <div data-bind="dxCommand: { title: 'Back', id: 'back', type: 'back', visible: backButtonVisible, onExecute: backButtonAction  }"></div>
+
+        <!--<div data-bind="dxCommand: { title: 'About Glico',icon: 'info', id: 'sync_from', onExecute: about_glico  }"></div>
+        <div data-bind="dxCommand: { title: 'Contact Glico',icon: 'message', id: 'sync_to', onExecute: contact_glico  }"></div>-->
+
+        <div id="loadpanel" data-bind="dxLoadPanel: { message: 'Loading...', visible: LoadPanelShown }"></div>
+
+        <div data-bind="dxScrollView: { }">
+            <div style="text-align: left; padding:7px">
+                <h2>Welcome, <strong data-bind="text: client_name"></strong></h2>
+                <!--<h4> Client Number: <strong><span data-bind="text: clientno"></span></strong></h4>
+        <p> <span data-bind="text: mail"></span><p>-->
+            </div><br />
+            <!--<div style="text-align: center; padding-top:30px;">
+        <h3><strong>Quick Actions</strong></h3><br />
+        <div data-bind="dxButton: { text: 'My Statements', icon:'doc', onClick: gotoStatements, width: 250 }"></div><br /><br />
+        <div data-bind="dxButton: { text: 'Make Payment', icon:'money', onClick: gotoPayment, width: 250 }"></div><br /><br />
+        <div data-bind="dxButton: { text: 'Buy a Policy', icon:'product', onClick: gotoBuy, width: 250 }"></div><br /><br />
+    </div>-->
+            <!--Create Explore our life policies-->
+            <!--<h3><strong>Explore our Policies</strong></h3>
+    <div align="center" data-bind="dxTileView: {
+         items: tileViewDataSource,
+         height: dxtile_height,
+         baseItemHeight: tile_height,
+         baseItemWidth: tile_width,
+         itemMargin: 10,
+         itemTemplate: itemTemplate
+    }"></div>-->
+            <!--Create the Quick links horizontally here-->
+            <h3 align="center"><strong>Quick Actions</strong></h3>
+            <div align="center" style="width:100%;align-content:center;text-align:center;">
+                <div align="center" style="width:100%;align-content:center;text-align:center;">
+                    <div style="float:left;width:34%;text-align:center;">
+                        <div class="col" style="margin-bottom:5px;" align="center" data-bind="dxButton: { text: '', icon:'doc', onClick: gotoStatements, width:300 }"></div><br />
+                        <div id="stat_click">My Statements</div>
+                    </div>
+                    <div style="float:left;width:33%;text-align:center;">
+                        <div class="col" style="margin-bottom:5px;" align="center" data-bind="dxButton: { text: '', icon:'money', onClick: gotoPayment, width:300 }"></div><br />
+                        <div id="pay_click">Make Payment</div>
+                    </div>
+                    <div style="float:left;width:33%;text-align:center;">
+                        <div class="col" style="margin-bottom:5px;" align="center" data-bind="dxButton: { text: '', icon:'cart', onClick: gotoBuy, width:300 }"></div><br />
+                        <div id="buy_click">Buy a Policy</div>
+                    </div>
+                </div>
+            </div>
+            <div align="center" style="width:100%;align-content:center;text-align:center;">
+                <div align="center" style="width:100%;align-content:center;text-align:center;">
+                    <div style="float:left;width:34%;text-align:center;">
+                        <!--<div class="col" style="margin-bottom:5px;" align="center" data-bind="dxButton: { text: '', icon:'gift', onClick: claim_request, width:300 }"></div><br />
+                        <div id="claim_click">Make Claim Request</div>-->
+                    </div>
+                    <div style="float:left;width:33%;text-align:center;">
+                        <div class="col" style="margin-bottom:5px;" align="center" data-bind="dxButton: { text: '', icon:'info', onClick: about_glico, width:300 }"></div><br />
+                        <div id="about_click">About Glico</div>
+                    </div>
+                    <div style="float:left;width:33%;text-align:center;">
+                        <div class="col" style="margin-bottom:5px;" align="center" data-bind="dxButton: { text: '', icon:'message', onClick: contact_glico, width:300 }"></div><br />
+                        <div id="contact_click">Contact Glico</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

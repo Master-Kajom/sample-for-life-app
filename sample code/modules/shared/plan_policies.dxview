@@ -1,0 +1,7 @@
+<div data-options="dxView : { name: 'plan_policies', title: 'plan_policies', disableCache: true } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        
+
+
+    </div>
+</div>

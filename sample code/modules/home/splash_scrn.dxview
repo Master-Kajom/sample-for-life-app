@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'splash_scrn', title: '', disableCache: true } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div id="loadpanel" data-bind="dxLoadPanel: { message: 'Application is setting up...', visible: LoadPanelShown }"></div>
+        
+        <div class="uk-position-center" align="center" style="width:100%;margin:0 auto;align-content:center;">
+            <video id="dbx" width="320" height="240">
+                <source src="images/glico_videos.mp4" type="video/mp4">
+            </video>
+            <div class="centre" style="width:100%;">
+                <div id="btnskipp" data-bind="dxButton: { text: 'SKIP', icon: 'chevronnext', onClick: next_scrn, type: 'normal', disabled:vs_next }"></div>
+            </div>
+        </div>
+
+    </div>
+</div>

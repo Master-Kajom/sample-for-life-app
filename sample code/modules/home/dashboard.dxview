@@ -1,0 +1,151 @@
+<div data-options="dxView : { name: 'dashboard', title: '', disableCache: true } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+
+        <div id="toolbar" data-bind="dxToolbar: { dataSource: toolbarItems, visible: vs_dxtoolbar }"></div>
+
+        <!--<div data-bind="dxScrollView: { height: get_dxtile_height }">-->
+        <!--<div class="uk-card-header"><strong>EXPLORE OUR LIFE POLICIES</strong></div>-->
+        <div class="uk-card uk-card-header">
+            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                <h3 class="uk-card-title uk-margin-remove-bottom"><strong>EXPLORE OUR LIFE POLICIES</strong></h3>
+                <!--<p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>-->
+            </div>
+        </div>
+        <!--<div align="center" style="width:92%;margin: auto;">
+        <div align="center" style="margin: auto;" data-bind="dxTileView: {
+         items: tileViewDataSource,
+         direction: 'vertical',
+         width: '91%',
+         baseItemHeight: tile_height,
+         baseItemWidth: tile_width,
+         itemMargin: 5,
+         itemTemplate: itemTemplate,
+         onItemClick: onItemClick
+    }"></div>
+    </div>-->
+        <!--<div class="uk-card uk-card-default uk-width-1-2@m">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <h3 class="uk-card-title uk-margin-remove-bottom">GLICO END – OF – SERVICE BENEFITS (ESB)</h3>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="uk-card-footer">
+            <a href="#" class="uk-button uk-button-text">Read more</a>
+        </div>
+    </div>-->
+
+        <div style="margin:0 auto;height:85%;width:100%;margin-top:15px;">
+            <div class="uk-flex" style="width:100%;margin:0 auto;height:28%;border:0px solid;">
+                <div id="esb_prod" class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center" style="width:50%;height:99%;margin-right:1%;">
+                    <div style="margin:0 auto;width:100%;height:100%;">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:68%;width:100%;margin: 0 auto;">
+                            <i class="fas fa-user-tie fa-4x"></i>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:30%;width:100%;font-size:90%;">
+                            <strong style="text-align:center;padding:3px;">GLICO END – OF – SERVICE BENEFITS (ESB)</strong>
+                        </div>
+                    </div>
+                </div>
+                <div id="funeral_prod" class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center" style="width:50%;height:99%;margin-right:1%;">
+                    <div style="margin:0 auto;width:100%;height:100%;">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:68%;width:100%;margin: 0 auto;">
+                            <i class="fas fa-bed fa-4x"></i>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:30%;width:100%;font-size:90%;">
+                            <strong style="text-align:center;padding:3px;">GLICO FUNERAL POLICY (GFP)</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex" style="width:100%;margin:0 auto;height:28%;border:0px solid;">
+                <div id="edu_prod" class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center" style="width:50%;height:99%;margin-right:1%;">
+                    <div style="margin:0 auto;width:100%;height:100%;">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:68%;width:100%;margin: 0 auto;">
+                            <i class="fas fa-user-graduate fa-4x"></i>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:30%;width:100%;font-size:90%;">
+                            <strong style="text-align:center;padding:3px;">GLICO ENDOWMENT EDUCATION PLAN (GEEP)</strong>
+                        </div>
+                    </div>
+                </div>
+                <div id="illness_prod" class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center" style="width:50%;height:99%;margin-right:1%;">
+                    <div style="margin:0 auto;width:100%;height:100%;">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:68%;width:100%;margin: 0 auto;">
+                            <i class="fas fa-user-injured fa-4x"></i>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:30%;width:100%;font-size:90%;">
+                            <strong style="text-align:center;padding:3px;">GLICO CRITICAL ILLNESS PLAN (GCIP)</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex" style="width:100%;margin:0 auto;height:28%;border:0px solid;">
+                <div id="life_prod" class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center" style="width:50%;height:99%;margin-right:1%;">
+                    <div style="margin:0 auto;width:100%;height:100%;">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:68%;width:100%;margin: 0 auto;">
+                            <i class="fas fa-user-md fa-4x"></i>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:30%;width:100%;font-size:90%;">
+                            <strong style="text-align:center;padding:3px;">GLICO LIFE GUARANTEED PLAN (LGP)</strong>
+                        </div>
+                    </div>
+                </div>
+                <div id="savings_prod" class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center" style="width:50%;height:99%;margin-right:1%;">
+                    <div style="margin:0 auto;width:100%;height:100%;">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:68%;width:100%;margin: 0 auto;">
+                            <i class="fas fa-money-bill fa-4x"></i>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="height:30%;width:100%;font-size:90%;">
+                            <strong style="text-align:center;padding:3px;">GLICO LIFE SAVINGS PLAN</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="row1" style="width:100%; height:85%;margin: 0 auto;margin-top:20px;">
+            <div class="col" id="dash_panel" align="center">
+                <div id="esb_prod" class="dash_panel_child_prod" style="background-image: url('images/icons/esb.png');" align="center">
+                <div class="dash_panel_prod">GLICO END – OF – SERVICE BENEFITS (ESB)</div>
+            </div>
+
+                <div id="funeral_prod" class="dash_panel_child_prod" style="background-image: url('images/icons/funeral.png');" align="center">
+                    <div class="dash_panel_prod">GLICO FUNERAL POLICY (GFP)</div>
+                </div>
+            </div>
+            <div class="col" id="dash_panel" align="center">
+                <div id="edu_prod" class="dash_panel_child_prod" style="background-image: url('images/icons/education.png');" align="center">
+                    <div class="dash_panel_prod">GLICO ENDOWMENT EDUCATION PLAN (GEEP)</div>
+                </div>
+                <div id="illness_prod" class="dash_panel_child_prod" style="background-image: url('images/icons/critical_illness.png');" align="center">
+                    <div class="dash_panel_prod">GLICO CRITICAL ILLNESS PLAN (GCIP)</div>
+                </div>
+            </div>
+            <div class="col" id="dash_panel" align="center">
+                <div id="life_prod" class="dash_panel_child_prod" style="background-image: url('images/icons/life_guaranteed.png');" align="center">
+                    <div class="dash_panel_prod">GLICO LIFE GUARANTEED PLAN (LGP)</div>
+                </div>
+                <div id="savings_prod" class="dash_panel_child_prod" style="background-image: url('images/icons/savings.png');" align="center">
+                    <div class="dash_panel_prod">GLICO LIFE SAVINGS PLAN</div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+        <!--Create the Quick links horizontally here-->
+        <!--<h3><strong>Quick Actions</strong></h3>-->
+        <!--<div align="center" style="width:100%;margin-top:10px;">
+        <div align="center" style="width:91%;margin: auto;">
+            <div style="float:left;width:49%;text-align:center;">
+                <div class="col" style="margin-bottom:5px;width:150px;" align="center" data-bind="dxButton: { text: 'SIGN IN', icon:'user', onClick: dologin, width:150, visible: vs_sign_in }"></div>
+            </div>
+            <div style="float:left;width:50%;text-align:center;">
+                <div class="col" style="margin-bottom:5px;width:150px;" align="center" data-bind="dxButton: { text: 'SIGN UP', icon:'edit', onClick: dosignup, width:150, visible: vs_sign_up }"></div>
+            </div>
+        </div>
+    </div>-->
+        <!--</div>-->
+    </div>
+</div>

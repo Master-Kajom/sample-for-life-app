@@ -1,0 +1,32 @@
+<div data-options="dxView : { name: 'new_sig', title: 'new_sig', disableCache: true } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+
+        <div data-bind="dxPopup:{ fullScreen: true, visible:vs_sig_popup }">
+            <div id="signaturepad" class="signature-pad" style="border:none; padding-top:50px;">
+                <div class="signature-pad--body">
+                    <canvas></canvas>
+                </div>
+                <div class="signature-pad--footer" style="border:none;">
+                    <div class="description">Sign above to Confirm</div>
+                    <div class="signature-pad--actions" style="border:none;">
+                        <div>
+                            <button type="button" class="button clear uk-button uk-button-danger" data-action="clear">Clear</button>
+                            <button type="button" class="button" data-action="change-color" hidden>Change color</button>
+                            <button type="button" class="button uk-button uk-button-danger" data-action="undo" hidden>Undo</button>
+                        </div>
+                        <div>
+                            <button type="button" class="button save uk-button uk-button-default" data-action="save-png">OK</button>
+                            <button type="button" class="button save" data-action="save-jpg" hidden>Save as JPG</button>
+                            <button type="button" class="button save" data-action="save-svg" hidden>Save as SVG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="centre" style="width:100%;">
+            <div class="btn-primary" data-bind="dxButton: { text: 'Sign', icon: 'edit', onClick: show_sig, type: 'success' }"></div>
+        </div>
+
+    </div>
+</div>

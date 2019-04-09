@@ -1,0 +1,56 @@
+<div data-options="dxView : { name: 'pay', title: 'PAY', disableCache: true } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+
+        <div id="loadpanel" data-bind="dxLoadPanel: { message: 'Loading...', visible: LoadPanelShown }"></div>
+
+        <div data-bind="dxScrollView: { }">
+            <div class="row1" style="text-align:left;">
+                <div class="col">
+                    <div data-bind="{ text: 'Policy / Proposal No: ', visible: vs_polno }"></div>
+                    <div data-bind="dxTextBox:{ value: policy_no, readOnly: true, visible: vs_polno }, dxValidator: policynoValidationRules"></div>
+                </div>
+                <div class="col">
+                    <div data-bind="{ text: 'Amount: ' }"></div>
+                    <div data-bind="dxTextArea:{ value: amount, readOnly: true }, dxValidator: amountValidationRules"></div>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="col">
+                    <div data-bind="{ text: 'Year: ', visible: vs_premium }"></div>
+                    <div data-bind="dxLookup: { dataSource: year_store, valueExpr: 'id', displayExpr: 'id', value: year_selected, visible: vs_premium }"></div>
+                </div>
+                <div class="col">
+                    <div data-bind="{ text: 'Month: ', visible: vs_premium }"></div>
+                    <div data-bind="dxLookup: { dataSource: month_store, valueExpr: 'name', displayExpr: 'name', value: month, visible: vs_premium }"></div>
+                </div>
+            </div>
+            <div class="row1" style="text-align:left;">
+                <div class="col">
+                    <div data-bind="{ text: 'Payment Date: ' }"></div>
+                    <div data-bind="dxDateBox:{ value: payment_date, readOnly: true }"></div>
+                </div>
+                <div class="col">
+                    <div data-bind="{ text: 'Payment Type: ' }"></div>
+                    <!--<div data-bind="dxTextArea:{ value: payment_type }, dxValidator: paytypeValidationRules"></div>-->
+                    <div data-bind="dxLookup: { dataSource: type_store, valueExpr: 'id', displayExpr: 'desc', value: payment_type, readOnly: true }, dxValidator: paytypeValidationRules"></div>
+                </div>
+            </div>
+            <!--<div class="row1" style="text-align:left;">
+        <div class="col">
+            <div data-bind="{ text: 'Market: ' }"></div>
+            <div data-bind="dxTextBox:{ value: market }, dxValidator: mrktValidationRules"></div>
+        </div>
+    </div>-->
+            <div class="row1" style="text-align:left;">
+                <div class="col">
+                    <div data-bind="{ text: 'Payment Method: ' }"></div>
+                    <!--<div data-bind="dxTextBox:{ value: market }, dxValidator: paymthdValidationRules"></div>-->
+                    <div data-bind="dxLookup: { dataSource: pay_store, valueExpr: 'id', displayExpr: 'desc', value: pay_method, readOnly: true }, dxValidator: paymthdValidationRules"></div>
+                </div>
+            </div>
+            <div class="centre" style="width:100%;">
+                <div class="btn-primary" data-bind="dxButton: { text: 'PAY', icon: 'money', onClick: save_fn, useSubmitBehavior: true, type: 'success' }"></div>
+            </div>
+        </div>
+    </div>
+</div>

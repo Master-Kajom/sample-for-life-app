@@ -1,0 +1,29 @@
+<div data-options="dxView : { name: 'inv_contributions', title: 'INVESTMENT SUMMARY', disableCache: true } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+
+        <div id="loadpanel" data-bind="dxLoadPanel: { message: 'Loading...', visible: LoadPanelShown }"></div>
+
+        <div class="dx-fieldset-header" align="center" data-bind="{ text: lblpolicy_no }"></div>
+
+        <div style="padding: 3px;" data-bind="dxList: { dataSource: payment_Store, height: '90%' }">
+            <div data-options="dxTemplate:{ name:'item' }">
+                <div class="uk-card uk-card-default uk-width-1-1@m">
+                    <div class="uk-card-header">
+                        <div class="uk-grid uk-flex-middle" uk-grid>
+                            <!--fund_year, total_prem, prem_allocated, interest, cacv-->
+                            <div style="display:inline-block; margin: 1px; width:100%;">
+                                <p>Year: <b data-bind="text: fund_year"></b></p>
+                                <p>Total Premium: <b data-bind="text: total_prem"></b></p>
+                                <p>Premium allocated: <b data-bind="text: prem_allocated"></b></p>
+                                <p>Interest: <b data-bind="text: interest"></b></p>
+                                <p>Amount Withdrawn: <b data-bind="text: amt_withdrawn"></b></p>
+                                <p>Cummulated Cash Value: <b data-bind="text: cacv"></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

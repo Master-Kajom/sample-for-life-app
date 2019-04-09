@@ -1,0 +1,145 @@
+﻿.dx-tile-content {
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.dx-tile-content .image {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    display: block;
+}
+
+.dx-tile {
+    border: 1px solid #999;
+}
+
+.dx-tile.dx-state-hover {
+    border-color: #EEE;
+}
+
+.dx-tile-content .price {
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    padding: 2px;
+    left: 9px;
+    top: 9px;
+}
+
+#border {
+
+    border: 1px solid grey;
+
+}
+.small_font {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+}
+.login {
+
+    vertical-align:central;
+    /***border: 1px solid black;**/
+}
+#forms {
+    width: 100%;
+    margin: 1% auto;
+    overflow:hidden;
+    display: block;
+    float:left;
+}
+.left {
+    text-align:left;
+}
+.right {
+    text-align: right;
+}
+.db_data {
+
+    color:blue;
+    font-size:larger;
+
+}
+.centre {
+    text-align:center;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+    width:100%;
+}
+.float_left{
+    padding: 5px;
+    float:left;
+}
+.buttons {
+
+    margin:0 auto;
+    background-color: orange;
+
+}
+
+
+.container_left {
+
+    width:50%;
+    float:left;
+
+}
+
+.container_right {
+
+    width:50%;
+    float:left;
+
+}
+
+.top_left {
+
+    width:50%;
+    height: 50%;
+    float:left;
+    
+
+}
+#chart {
+    height: 96%;
+    width: 90%;
+}
+#pie {
+    
+    height: 96%;
+    width: 48%;
+    margin: 0 auto;
+}
+#polar_chart {
+    float: left;
+    height: 96%;
+    width: 48%;
+    margin: 0 auto;
+}
+#rpt_filters_lbl{
+    width: 120px;
+    text-align: right;
+}
+#rpt_filters_txt{
+    text-align: left;
+}
+
+.image_prod {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    display: block;
+}
+
+.list_view_item {
+    color: #00ff21;
+    white-space: normal;
+}

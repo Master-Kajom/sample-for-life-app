@@ -1,0 +1,51 @@
+<div data-options="dxView : { name: 'our_products', title: 'PRODUCTS & SERVICES', disableCache: true } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div data-bind="dxScrollView: { }">
+            <h2 align="center">Individual Life</h2>
+            <p style="font-size:small; padding-top:20px; padding:10px;">
+                Ordinary life insurance is 
+                commonly defined as a policy
+                that pays a beneficiary at 
+                the end of a policy period or at death. In effect, it is the insurance on the life of the insured for a fixed amount at a definite premium that is paid each year in the same amount (or by agreed annual increment amount) during the entire period of the insured.
+
+                </p>
+            <div style="padding:10px;">
+                <div style="width:100%; padding:5px;">
+                    <h4><span class="dx-icon-chevronnext icon"></span> <b> GLICO END-OF-SERVICE BENEFITS (ESB)</b> </h4>
+
+                </div>
+
+                <div style="width:100%; padding:5px;">
+                    <h4><span class="dx-icon-chevronnext icon"></span> <b> GLICO FUNERAL POLICY (GFP)</b> </h4>
+
+                </div>
+
+                <div style="width:100%; padding:5px;">
+                    <h4><span class="dx-icon-chevronnext icon"></span> <b> GLICO CRITICAL ILLNESS PLAN (GCIP) </b> </h4>
+
+                </div>
+
+                <div style="width:100%; padding:5px;">
+                    <h4><span class="dx-icon-chevronnext icon"></span> <b> GLICO LIFE GUARANTEED PLAN (GP)</b></h4>
+
+                </div>
+
+                <div style="width:100%; padding:5px;">
+                    <h4><span class="dx-icon-chevronnext icon"></span> <b> GLICO TRAVEL INSURANCE PLAN</b> </h4>
+
+                </div>
+
+                <div style="width:100%; padding:5px;">
+                    <h4><span class="dx-icon-chevronnext icon"></span> <b>GLICO LIFE SAVINGS PLAN</b> </h4>
+
+                </div>
+                <div style="width:100%; padding:5px;">
+                    <h4><span class="dx-icon-chevronnext icon"></span> <b> GLICO ENDOWMENT EDUCATION PLAN (GEEP)</b> </h4>
+
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+</div>
